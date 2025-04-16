@@ -19,17 +19,7 @@ body{
     background-color: hsl(0, 0%, 100%);
     position: relative;
 }
-.pattern-background{
-    min-height: max-content;
-    min-width: 100%;
-    background-image: var(--pattern-background-mobile);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+
 .accordion-container{
     width: 90%;
     max-width: 600px;

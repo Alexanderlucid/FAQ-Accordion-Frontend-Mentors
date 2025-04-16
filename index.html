@@ -12,9 +12,12 @@
 </head>
 <body>
   <div class="container">
-    <div class="pattern-background"></div>
-    <!-- Later use javascript to change this image src attribute for desktop screens -->
-    <img src="./assets/images/background-pattern-mobile.svg" alt="pattern background" class="pattern-background-mobile">
+    <picture>
+      <!-- Image for screens 768px and up -->
+      <source media="(min-width:600px)" srcset="./assets/images/background-pattern-desktop.svg" sizes="">
+      <!-- Default Image (Mobile Screens) -->
+      <img src="./assets/images/background-pattern-mobile.svg" alt="Mobile Image">
+    </picture>
     <div class="accordion-container">
       FAQs
       <div class="accordion-box">
@@ -29,9 +32,10 @@
 
 
   
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
-  Coded by <a href="#">Falere Alexander - LucidCode</a>
-</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+    Coded by <a href="#">Falere Alexander - LucidCode</a>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
