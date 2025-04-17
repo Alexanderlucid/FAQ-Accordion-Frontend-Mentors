@@ -12,20 +12,82 @@
 </head>
 <body>
   <div class="container">
-    <picture>
+    <picture class="pattern-image">
       <!-- Image for screens 768px and up -->
-      <source media="(min-width:600px)" srcset="./assets/images/background-pattern-desktop.svg" sizes="">
+      <source media="(min-width:400px)" srcset="./assets/images/background-pattern-desktop.svg" sizes="">
       <!-- Default Image (Mobile Screens) -->
-      <img src="./assets/images/background-pattern-mobile.svg" alt="Mobile Image">
+      <img loading="lazy" class="pattern-image" src="./assets/images/background-pattern-mobile.svg" alt="Mobile Image">
     </picture>
+    
     <div class="accordion-container">
-      FAQs
-      <div class="accordion-box">
-        <!-- <h4>What is Frontend Mentor,<br>and how will it help me?</h4>
-        <h4>is Frontend mentor free?</h4>
-        <h4>Can I use Frontend mentor<br>projects in my portfolio?</h4>
-        <h4>How can I get help if i'm<br> stuck on a project</h4> -->
+      <div class="accordion-header-container">
+        <img loading="lazy" src="./assets/images/icon-star.svg" class="accordion-star-image-header" alt="star image">
+        <h1>FAQs</h1>
+      </div>
+      <!-- 
+        Each accordion item has:
+        A clickable header
+        A panel that expands/collapses
+      -->
 
+      <div class="accordion-box">
+        <div class="accordion-box-item">
+          <h4 class="accordion-header">What is Frontend Mentor,and how will it help me?</h4>
+          <img src="./assets/images/icon-plus.svg" alt="icon plus">
+
+          <div class="accordion-panel">
+            <p class="accordion-panel-text">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects
+              in HTML, CSS, and JavaScript. It is suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-box-item">
+          <h4 class="accordion-header">is Frontend mentor free?</h4>
+          <img src="./assets/images/icon-plus.svg" alt="icon plus">
+
+          <div class="accordion-panel">
+            <p class="accordion-panel-text">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects
+              in HTML, CSS, and JavaScript. It is suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="accordion-box-item">
+          <h4 class="accordion-header">Can I use Frontend mentor projects in my portfolio?</h4>
+          <img src="./assets/images/icon-plus.svg" alt="icon plus">
+
+          <div class="accordion-panel">
+            <p class="accordion-panel-text">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects
+              in HTML, CSS, and JavaScript. It is suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="accordion-box-item">
+          <h4 class="accordion-header">How can I get help if i'm stuck on a project</h4>
+          <img src="./assets/images/icon-plus.svg" alt="icon plus">
+
+          <div class="accordion-panel">
+            <p class="accordion-panel-text">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects
+              in HTML, CSS, and JavaScript. It is suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
