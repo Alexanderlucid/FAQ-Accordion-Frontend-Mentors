@@ -7,8 +7,6 @@ html{
     font-size:16px;
 }
 :root{
-    --pattern-background-desktop: url('./assets/images/background-pattern-desktop.svg');
-    --pattern-background-mobile: url('./assets/images/background-pattern-mobile.svg');
     --white:hsl(0, 0%, 100%);
     --light-pink:hsl(275, 100%, 97%);
     --grayish-purple:hsl(292, 16%, 49%);
@@ -17,7 +15,6 @@ html{
 body{
     background-color: var(--light-pink);
     min-width:100%;
-    position: relative;
 }
 .container{
     width: 100%;
@@ -31,9 +28,8 @@ body{
 .pattern-image{
     display:block;
     height:200px;
-    width:100%;
+    min-width:100%;
     object-fit: cover;
-    position: relative;
 }
 /* Styling the accordion card container */
 .accordion-container{
@@ -41,8 +37,8 @@ body{
     padding: 20px;
     height: auto;
     background-color: var(--white);
-    position: absolute;
-    top: 120px;
+    position: relative;
+    top: -90px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -69,14 +65,12 @@ body{
 }
 .accordion-box-item{
     display: flex;
-    flex-direction: rowa;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
     background-color: var(--white);
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    border-bottom: 1px solid black;
 }   
 .accordion-panel{
     display: none;
