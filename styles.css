@@ -41,6 +41,8 @@ body{
     background-color: var(--white);
     position: relative;
     top: -120px;
+    left: 0;
+    right: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -92,6 +94,7 @@ body{
 
 /* attribution text set absolute to the body */
 .attribution {
+    color: var(--grayish-purple);
     font-size: 0.5rem;
     text-align: center;
     position: absolute;
@@ -99,7 +102,10 @@ body{
     left: 0;
     right:0;
  }
-.attribution a { color: var(--dark-purple); }
+.attribution a { 
+    color: var(--dark-purple); 
+    font-weight: 700;
+}
 
 @media (max-width: 600px) {
     .accordion-container{
