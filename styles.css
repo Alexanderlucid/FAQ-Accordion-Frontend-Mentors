@@ -16,6 +16,7 @@ body{
     background-color: var(--light-pink);
     min-width:100%;
     font-family: "Work Sans", sans-serif;
+    position: relative;
 }
 .container{
     width: 100%;
@@ -91,14 +92,14 @@ body{
 
 /* attribution text set absolute to the body */
 .attribution {
-    font-size: 11px;
+    font-size: 0.5rem;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     left: 0;
     right:0;
  }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: var(--dark-purple); }
 
 @media (max-width: 600px) {
     .accordion-container{
