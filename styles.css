@@ -87,3 +87,9 @@ body{
     right:0;
  }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px) {
+    .accordion-container{
+        width: 90%;
+    }   
+}
