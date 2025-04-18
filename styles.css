@@ -14,21 +14,23 @@ html{
 }
 body{
     background-color: var(--light-pink);
-    min-width:100%;
+    width:100%;
     font-family: "Work Sans", sans-serif;
+    /* overflow-x: hidden; */
 }
 .container{
     min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Styling the svg image for the showcase */
 .pattern-image{
     display:block;
     height:300px;
-    min-width:100%;
+    width:100%;
     object-fit: cover;
 }
 /* Styling the accordion card container */
