@@ -22,7 +22,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 /* Styling the svg image for the showcase */
@@ -35,7 +34,6 @@ body{
 /* Styling the accordion card container */
 .accordion-container{
     width:40%;
-    margin: auto;
     padding: 30px;
     background-color: var(--white);
     position: relative;
@@ -109,5 +107,6 @@ body{
 @media (max-width: 600px) {
     .accordion-container{
         width: 90%;
+        align-self: center;
     }   
 }
