@@ -16,7 +16,6 @@ body{
     background-color: var(--light-pink);
     width:100%;
     font-family: "Work Sans", sans-serif;
-    /* overflow-x: hidden; */
 }
 .container{
     min-width: 100%;
@@ -107,8 +106,12 @@ body{
 }
 
 @media (max-width: 600px) {
+    .pattern-image{
+        left:30px;
+    }
     .accordion-container{
         width: 90%;
         align-self: center;
-    }   
+    } 
+
 }
