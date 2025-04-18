@@ -108,6 +108,7 @@ body{
 @media (max-width: 600px) {
     .pattern-image{
         object-fit: cover;
+        height: auto;
     }
     .accordion-container{
         display:none;
