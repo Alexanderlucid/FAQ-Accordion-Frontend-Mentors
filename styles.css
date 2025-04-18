@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Styling the svg image for the showcase */
@@ -40,7 +41,7 @@ body{
     padding: 30px;
     height: auto;
     background-color: var(--white);
-    position: relative;
+    position: absolute;
     top: -120px;
     left: 0;
     right: 0;
