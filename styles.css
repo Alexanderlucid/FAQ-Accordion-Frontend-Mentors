@@ -107,7 +107,8 @@ body{
 
 @media (max-width: 600px) {
     .pattern-image{
-        height: 350px;
+        height: 200px;
+        object-fit:contain;
     }
     .accordion-container{
         width: 90%;
