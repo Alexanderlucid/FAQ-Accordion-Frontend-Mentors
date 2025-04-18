@@ -111,7 +111,7 @@ body{
     }
     .accordion-container{
         width: 90%;
-        align-self: center;
+        top: -130px;
     } 
 
 }
