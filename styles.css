@@ -103,6 +103,18 @@ body{
     text-align: left;
     width: 90%;
 }
+blockquote,ul{
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    
+    color: var(--faint-grayish-purple);
+    font-weight: 400;
+    list-style-type: none;
+    
+}
+ul li{
+    padding: 0.5rem 0;
+}
 .accordion-panel.open {
     max-height: 500px; /* enough height to show content */
 }
