@@ -115,6 +115,13 @@ blockquote,ul{
 ul li{
     padding: 0.5rem 0;
 }
+.accordion-panel-text a{
+    color: inherit;
+    font-weight: 700;
+}
+.accordion-panel-test a:active{
+    color: inherit;
+}
 .accordion-panel.open {
     max-height: 500px; /* enough height to show content */
 }
@@ -125,7 +132,7 @@ ul li{
     font-size: 0.5rem;
     text-align: center;
     position: relative;
-    bottom: -50px;
+    bottom: 10px;
     left: 0;
     right:0;
  }
@@ -142,6 +149,12 @@ ul li{
     .accordion-container{
         width: 85%;
         top: -105px;
-    } 
+    }
+    .attribution {
+        position: relative;
+        bottom: -80px;
+        left: 0;
+        right:0;
+     }
 
 }
