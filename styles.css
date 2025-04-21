@@ -11,6 +11,8 @@ html{
     --light-pink:hsl(275, 100%, 97%);
     --grayish-purple:hsl(292, 16%, 49%);
     --dark-purple:hsl(292, 42%, 14%);
+    --light-purple:hsla(270, 40%, 30%, 0.2);
+    --faint-grayish-purple: hsl(274, 8%, 30%);
 }
 body{
     background-color: var(--light-pink);
@@ -42,7 +44,7 @@ body{
     left: 0;
     right: 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px 40px 1px var(--light-purple);
 }
 
 /* Accordion Header */
@@ -66,8 +68,15 @@ body{
 .accordion-box{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     min-width: 100%;
+}
+.accordion-box-item{
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--light-pink);
+    box-shadow: 0 1px 0.5px var(--light-pink)
+}
+.accordion-box-item:last-child{
+    border-bottom: none;
 }
 .accordion-box-item-header{
     display: flex;
@@ -75,19 +84,27 @@ body{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem 0;
-    color: var(--dark-purple);
-
-}   
+}
+.accordion-box-item-header .accordion-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
 .accordion-panel{
-    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
     color: var(--grayish-purple);
+    transition: max-height 0.3s ease;
 }
 .accordion-panel-text{
     padding: 0.5rem 0;
     font-size: 0.8rem;
     line-height: 1.0rem;
     font-weight: 400;
+    text-align: left;
+    width: 90%;
+}
+.accordion-panel.open {
+    max-height: 500px; /* enough height to show content */
 }
 
 /* attribution text set absolute to the body */
@@ -96,7 +113,7 @@ body{
     font-size: 0.5rem;
     text-align: center;
     position: relative;
-    bottom: 0px;
+    bottom: 10px;
     left: 0;
     right:0;
  }
